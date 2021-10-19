@@ -25,7 +25,7 @@ pipelines:
     merge-failure:
       smtp:
         #TODO: Update these to real e-mail addresses
-        to: third_party_ci@example.com
+        to: hpexpci@hpe.com
         from: zuul@example.com
         subject: Upstream change {change} has a merge failure
 
@@ -42,13 +42,13 @@ pipelines:
     success:
       smtp:
         #TODO: Update these to real e-mail addresses
-        to: third_party_ci@example.com
+        to: hpexpci@hpe.com
         from: zuul@example.com
         subject: 'Silent check of {change.project} {change.number},{change.patchset} passed'
     failure:
       smtp:
         #TODO: Update these to real e-mail addresses
-        to: third_party_ci@example.com
+        to: hpexpci@hpe.com
         from: zuul@example.com
         subject: 'Silent check of {change.project} {change.number},{change.patchset} failed'
 
